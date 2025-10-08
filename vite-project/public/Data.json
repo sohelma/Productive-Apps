@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "TaskMate",
+    "category": "Productivity",
+    "description": "Manage your daily tasks and stay organized effortlessly.",
+    "icon": "/assets/demo-app (1).webp",
+    "rating": 4.6,
+    "downloads": "1M+",
+    "developer": "HeroSoft",
+    "link": "https://play.google.com/store/apps/details?id=taskmate"
+  },
+  {
+    "id": 2,
+    "name": "FitTrack",
+    "category": "Health & Fitness",
+    "description": "Track your workouts, calories, and daily steps with precision.",
+    "icon": "/assets/demo-app (2).webp",
+    "rating": 4.4,
+    "downloads": "500K+",
+    "developer": "ActiveApps",
+    "link": "https://play.google.com/store/apps/details?id=fittrack"
+  },
+  {
+    "id": 3,
+    "name": "Foodify",
+    "category": "Food & Drink",
+    "description": "Discover nearby restaurants and order your favorite meals instantly.",
+    "icon": "/assets/demo-app (3).webp",
+    "rating": 4.8,
+    "downloads": "2M+",
+    "developer": "TastyTech",
+    "link": "https://play.google.com/store/apps/details?id=foodify"
+  },
+  {
+    "id": 4,
+    "name": "TravelGo",
+    "category": "Travel",
+    "description": "Book flights, hotels, and plan your trips easily with TravelGo.",
+    "icon": "/assets/demo-app (4).webp",
+    "rating": 4.5,
+    "downloads": "800K+",
+    "developer": "GlobalTrips Ltd",
+    "link": "https://play.google.com/store/apps/details?id=travelgo"
+  },
+  {
+    "id": 5,
+    "name": "LearnPro",
+    "category": "Education",
+    "description": "Access thousands of online courses and upskill at your pace.",
+    "icon": "/assets/demo-app (1).webp",
+    "rating": 4.7,
+    "downloads": "1.5M+",
+    "developer": "EduSmart",
+    "link": "https://play.google.com/store/apps/details?id=learnpro"
+  },
+  {
+    "id": 6,
+    "name": "NewsWave",
+    "category": "News",
+    "description": "Get breaking news alerts and trending stories from around the world.",
+    "icon": "/assets/demo-app (5).webp",
+    "rating": 4.3,
+    "downloads": "700K+",
+    "developer": "WaveMedia",
+    "link": "https://play.google.com/store/apps/details?id=newswave"
+  },
+  {
+    "id": 7,
+    "name": "BudgetBuddy",
+    "category": "Finance",
+    "description": "Track expenses and manage your monthly budget smartly.",
+    "icon": "/assets/demo-app (6).webp",
+    "rating": 4.5,
+    "downloads": "600K+",
+    "developer": "FinServe",
+    "link": "https://play.google.com/store/apps/details?id=budgetbuddy"
+  },
+  {
+    "id": 8,
+    "name": "ChatEase",
+    "category": "Communication",
+    "description": "Connect instantly with friends and family using secure messaging.",
+    "icon": "/assets/demo-app (2).webp",
+    "rating": 4.2,
+    "downloads": "5M+",
+    "developer": "EaseTech",
+    "link": "https://play.google.com/store/apps/details?id=chatease"
+  }
+  
+ 
+
+]
