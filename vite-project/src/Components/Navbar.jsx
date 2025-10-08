@@ -19,11 +19,11 @@ const Navbar = () => {
     </div>
     <a className="btn bg-white border-0 text-xl text-[#632EE3] "><img src="/assets/logo.png" alt="logo"style={{ width: '40px', maxWidth: '90%' }} />HERO.IO</a>
   </div>
-  <div className="navbar-center hidden lg:flex bg-white ">
-    <ul className="menu menu-horizontal px-1 text-bold ">
-   <li  className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3]'><NavLink to='/'>Home</NavLink></li>
-   <li  className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3]'><NavLink to='/'>Apps</NavLink></li>
-   <li  className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3]'><NavLink to='/'>Installation</NavLink></li>
+  <div className="navbar-center hidden lg:flex  ">
+    <ul className="menu menu-horizontal px-1 font-bold text-md">
+   <li  ><NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/'>Home</NavLink></li>
+   <li  ><NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/'>Apps</NavLink></li>
+   <li  ><NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/'>Installation</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
