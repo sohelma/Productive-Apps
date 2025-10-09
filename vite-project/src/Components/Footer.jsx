@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div>
-             <div className="bg-[#001931] w-full sm:w-full ">
+             <div className="bg-[#001931] w-full sm:w-full px-4 sm:px-6 md:px-10 lg:px-20 ">
                     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-gray-400 ">
                        <div className="px-2 py-8">
                             <h1 className="text-xl text-white mb-2">CS — Ticket System</h1>

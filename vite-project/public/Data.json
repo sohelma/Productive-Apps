@@ -38,7 +38,7 @@
     "category": "Travel",
     "description": "Book flights, hotels, and plan your trips easily with TravelGo.",
     "icon": "/assets/demo-app (4).webp",
-    "rating": 4.5,
+    "rating": 6,
     "downloads": "800K+",
     "developer": "GlobalTrips Ltd",
     "link": "https://play.google.com/store/apps/details?id=travelgo"
@@ -48,9 +48,9 @@
     "name": "LearnPro",
     "category": "Education",
     "description": "Access thousands of online courses and upskill at your pace.",
-    "icon": "/assets/demo-app (1).webp",
-    "rating": 4.7,
-    "downloads": "1.5M+",
+    "icon": "/assets/demo-app (4).webp",
+    "rating": 7,
+    "downloads": "5M+",
     "developer": "EduSmart",
     "link": "https://play.google.com/store/apps/details?id=learnpro"
   },
@@ -78,16 +78,59 @@
   },
   {
     "id": 8,
-    "name": "ChatEase",
-    "category": "Communication",
+    "name": "NewsWave",
+    "category": "Education",
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (2).webp",
     "rating": 4.2,
     "downloads": "5M+",
     "developer": "EaseTech",
     "link": "https://play.google.com/store/apps/details?id=chatease"
+  },
+  {
+    "id": 9,
+    "name": "ChatEase",
+    "category": "Communication",
+    "description": "Connect instantly with friends and family using secure messaging.",
+    "icon": "/assets/demo-app (4).webp",
+    "rating": 5,
+    "downloads": "1M+",
+    "developer": "EaseTech",
+    "link": "https://play.google.com/store/apps/details?id=chatease"
+  },
+    {
+    "id": 10,
+    "name": "ChatEase",
+    "category": "Communication",
+    "description": "Connect instantly with friends and family using secure messaging.",
+    "icon": "/assets/demo-app (6).webp",
+    "rating": 7,
+    "downloads": "4M+",
+    "developer": "EaseTech",
+    "link": "https://play.google.com/store/apps/details?id=chatease"
+  },
+    {
+    "id": 11,
+    "name": "NewsWave",
+    "category": "Communication",
+    "description": "Connect instantly with friends and family using secure messaging.",
+    "icon": "/assets/demo-app (1).webp",
+    "rating": 2,
+    "downloads": "15M+",
+    "developer": "EaseTech",
+    "link": "https://play.google.com/store/apps/details?id=chatease"
+  },
+    {
+    "id": 12,
+    "name": "ChatEase",
+    "category": "Education",
+    "description": "Connect instantly with friends and family using secure messaging.",
+    "icon": "/assets/demo-app (3).webp",
+    "rating": 2,
+    "downloads": "10M+",
+    "developer": "EaseTech",
+    "link": "https://play.google.com/store/apps/details?id=chatease"
   }
-  
  
 
 ]
