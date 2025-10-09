@@ -26,6 +26,30 @@ const Home = () => {
                 <img src="/assets/hero.png" alt="hero" style={{ width: '600px', maxWidth: '90%' }}/>
             </div>
             <div>
+
+                <div className='text-white bg-[#632EE3] my-5 py-8'>
+                    <h1 className='text-2xl mb-5' >Trusted by Millions, Built for You</h1>
+                   <div className='flex justify-around'>
+                         <div>
+                        <p>Total Downloads</p>
+                        <h1 className='text-4xl font-bold'>29.6M</h1>
+                        <p>21% more than last month</p>
+                    </div>
+                    <div>
+                        <p>Total Review</p>
+                        <h1 className='text-4xl font-bold'>906K</h1>
+                        <p>46% more than last month</p>
+                    </div>
+                    <div>
+                        <p>Active Apps</p>
+                        <h1 className='text-4xl font-bold'>132+</h1>
+                        <p>31 more will launch</p>
+                    </div>
+
+                   </div>
+
+                </div>
+
                 <div className='text-center my-10'>
                     <h1 className='text-3xl font-bold'>Trending Apps</h1>
                     <p>Explore All Trending Apps on the Market developed by us</p>

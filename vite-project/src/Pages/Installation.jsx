@@ -28,7 +28,12 @@ const Installation = () => {
   });
 
   return (
-    <div className="max-w-6xl mx-auto p-6 sm:p-10">
+    
+    <div className="max-w-6xl mx-auto p-6 sm:p-10 bg-gray-100">
+        <div className='text-center mb-5'>
+            <h1 className='text-2xl font-bold'>Your Installed Apps</h1>
+            <p>Explore All Trending Apps on the Market developed by us</p>
+        </div>
       {/* Header with count and sort */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold">{installedProducts.length} App{installedProducts.length !== 1 ? 's' : ''} Found</h1>
