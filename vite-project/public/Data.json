@@ -6,9 +6,16 @@
     "description": "Manage your daily tasks and stay organized effortlessly.",
     "icon": "/assets/demo-app (1).webp",
     "rating": 4.6,
-    "downloads": "1M+",
+    "downloads": "1M",
     "developer": "HeroSoft",
-    "link": "https://play.google.com/store/apps/details?id=taskmate"
+    "link": "https://play.google.com/store/apps/details?id=taskmate",
+    "ratingsBreakdown": {
+      "1": 5,
+      "2": 10,
+      "3": 20,
+      "4": 30,
+      "5": 35
+    }
   },
   {
     "id": 2,
@@ -17,9 +24,16 @@
     "description": "Track your workouts, calories, and daily steps with precision.",
     "icon": "/assets/demo-app (2).webp",
     "rating": 4.4,
-    "downloads": "500K+",
+    "downloads": "500K",
     "developer": "ActiveApps",
-    "link": "https://play.google.com/store/apps/details?id=fittrack"
+    "link": "https://play.google.com/store/apps/details?id=fittrack",
+    "ratingsBreakdown": {
+      "1": 8,
+      "2": 12,
+      "3": 25,
+      "4": 28,
+      "5": 27
+    }
   },
   {
     "id": 3,
@@ -28,20 +42,34 @@
     "description": "Discover nearby restaurants and order your favorite meals instantly.",
     "icon": "/assets/demo-app (3).webp",
     "rating": 4.8,
-    "downloads": "2M+",
+    "downloads": "2M",
     "developer": "TastyTech",
-    "link": "https://play.google.com/store/apps/details?id=foodify"
+    "link": "https://play.google.com/store/apps/details?id=foodify",
+    "ratingsBreakdown": {
+      "1": 4,
+      "2": 6,
+      "3": 15,
+      "4": 35,
+      "5": 40
+    }
   },
   {
     "id": 4,
     "name": "TravelGo",
     "category": "Travel",
     "description": "Book flights, hotels, and plan your trips easily with TravelGo.",
-    "icon": "/assets/demo-app (4).webp",
+    "icon": "/assets/demo-app (5).webp",
     "rating": 6,
-    "downloads": "800K+",
+    "downloads": "800K",
     "developer": "GlobalTrips Ltd",
-    "link": "https://play.google.com/store/apps/details?id=travelgo"
+    "link": "https://play.google.com/store/apps/details?id=travelgo",
+    "ratingsBreakdown": {
+      "1": 3,
+      "2": 7,
+      "3": 20,
+      "4": 35,
+      "5": 35
+    }
   },
   {
     "id": 5,
@@ -50,9 +78,16 @@
     "description": "Access thousands of online courses and upskill at your pace.",
     "icon": "/assets/demo-app (4).webp",
     "rating": 7,
-    "downloads": "5M+",
+    "downloads": "5M",
     "developer": "EduSmart",
-    "link": "https://play.google.com/store/apps/details?id=learnpro"
+    "link": "https://play.google.com/store/apps/details?id=learnpro",
+    "ratingsBreakdown": {
+      "1": 2,
+      "2": 5,
+      "3": 18,
+      "4": 35,
+      "5": 40
+    }
   },
   {
     "id": 6,
@@ -61,9 +96,16 @@
     "description": "Get breaking news alerts and trending stories from around the world.",
     "icon": "/assets/demo-app (5).webp",
     "rating": 4.3,
-    "downloads": "700K+",
+    "downloads": "700K",
     "developer": "WaveMedia",
-    "link": "https://play.google.com/store/apps/details?id=newswave"
+    "link": "https://play.google.com/store/apps/details?id=newswave",
+    "ratingsBreakdown": {
+      "1": 10,
+      "2": 15,
+      "3": 25,
+      "4": 25,
+      "5": 25
+    }
   },
   {
     "id": 7,
@@ -72,9 +114,16 @@
     "description": "Track expenses and manage your monthly budget smartly.",
     "icon": "/assets/demo-app (6).webp",
     "rating": 4.5,
-    "downloads": "600K+",
+    "downloads": "600K",
     "developer": "FinServe",
-    "link": "https://play.google.com/store/apps/details?id=budgetbuddy"
+    "link": "https://play.google.com/store/apps/details?id=budgetbuddy",
+    "ratingsBreakdown": {
+      "1": 6,
+      "2": 9,
+      "3": 22,
+      "4": 31,
+      "5": 32
+    }
   },
   {
     "id": 8,
@@ -83,9 +132,16 @@
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (2).webp",
     "rating": 4.2,
-    "downloads": "5M+",
+    "downloads": "5M",
     "developer": "EaseTech",
-    "link": "https://play.google.com/store/apps/details?id=chatease"
+    "link": "https://play.google.com/store/apps/details?id=chatease",
+    "ratingsBreakdown": {
+      "1": 5,
+      "2": 10,
+      "3": 20,
+      "4": 30,
+      "5": 35
+    }
   },
   {
     "id": 9,
@@ -94,43 +150,69 @@
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (4).webp",
     "rating": 5,
-    "downloads": "1M+",
+    "downloads": "1M",
     "developer": "EaseTech",
-    "link": "https://play.google.com/store/apps/details?id=chatease"
+    "link": "https://play.google.com/store/apps/details?id=chatease",
+    "ratingsBreakdown": {
+      "1": 7,
+      "2": 13,
+      "3": 23,
+      "4": 28,
+      "5": 29
+    }
   },
-    {
+  {
     "id": 10,
     "name": "ChatEase",
     "category": "Communication",
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (6).webp",
     "rating": 7,
-    "downloads": "4M+",
+    "downloads": "4M",
     "developer": "EaseTech",
-    "link": "https://play.google.com/store/apps/details?id=chatease"
+    "link": "https://play.google.com/store/apps/details?id=chatease",
+    "ratingsBreakdown": {
+      "1": 4,
+      "2": 8,
+      "3": 18,
+      "4": 32,
+      "5": 38
+    }
   },
-    {
+  {
     "id": 11,
     "name": "NewsWave",
     "category": "Communication",
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (1).webp",
     "rating": 2,
-    "downloads": "15M+",
+    "downloads": "15M",
     "developer": "EaseTech",
-    "link": "https://play.google.com/store/apps/details?id=chatease"
+    "link": "https://play.google.com/store/apps/details?id=chatease",
+    "ratingsBreakdown": {
+      "1": 15,
+      "2": 20,
+      "3": 25,
+      "4": 20,
+      "5": 20
+    }
   },
-    {
+  {
     "id": 12,
     "name": "ChatEase",
     "category": "Education",
     "description": "Connect instantly with friends and family using secure messaging.",
     "icon": "/assets/demo-app (3).webp",
     "rating": 2,
-    "downloads": "10M+",
+    "downloads": "10M",
     "developer": "EaseTech",
-    "link": "https://play.google.com/store/apps/details?id=chatease"
+    "link": "https://play.google.com/store/apps/details?id=chatease",
+    "ratingsBreakdown": {
+      "1": 10,
+      "2": 15,
+      "3": 20,
+      "4": 25,
+      "5": 30
+    }
   }
- 
-
 ]

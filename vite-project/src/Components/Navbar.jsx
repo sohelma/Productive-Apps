@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="navbar px-4 sm:px-6 md:px-10 lg:px-20">
       <div className="navbar-start">
@@ -20,27 +22,24 @@ const Navbar = () => {
             <li><NavLink to='/installation'>Installation</NavLink></li>
           </ul>
         </div>
-        <a className="btn bg-white border-0 text-xl text-[#632EE3]">
-          <img src="/assets/logo.png" alt="logo" style={{ width: '40px', maxWidth: '90%' }} />HERO.IO
-        </a>
+
+        {/* Logo click redirects to Home */}
+        <button onClick={() => navigate('/')} className="btn bg-white border-0 text-xl text-[#632EE3] flex items-center gap-2">
+          <img src="/assets/logo.png" alt="logo" style={{ width: '40px', maxWidth: '90%' }} />
+          HERO.IO
+        </button>
       </div>
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold text-md">
-          <li>
-            <NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/apps'>Apps</NavLink>
-          </li>
-          <li>
-            <NavLink className='hover:text-[#632EE3] hover:underline hover:decoration-[#632EE3] hover:bg-transparent' to='/installation'>Installation</NavLink>
-          </li>
+          <li><NavLink to='/'className='bg-white hover:text-[#5619e4] hover:underline '>Home</NavLink></li>
+          <li><NavLink to='/apps'className='bg-white hover:text-[#5619e4] hover:underline '>Apps</NavLink></li>
+          <li><NavLink to='/installation'className='bg-white hover:text-[#5619e4] hover:underline '>Installation</NavLink></li>
         </ul>
       </div>
 
       <div className="navbar-end">
-        <a href='https://github.com/sohelma' className="btn bg-[#632EE3] text-white">
+        <a href='https://github.com/sohelma' className="btn bg-[#5619e4] text-white">
           <FaGithub />Contribute
         </a>
       </div>

@@ -4,6 +4,9 @@ import useProducts from '../hooks/UseProducts';
 import { FaDownload } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {
+  BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, LabelList
+} from 'recharts';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -19,17 +22,30 @@ const ProductDetails = () => {
   const { name, icon, downloads, rating, developer, description, size, ratingsBreakdown } = product;
 
   const handleInstallClick = () => {
-    setInstalled(true);
-    toast.success(`${name} has been installed successfully!`, {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    try {
+      const installedApps = JSON.parse(localStorage.getItem('installedProducts') || '[]');
+      if (installedApps.some(p => p.id === product.id)) {
+        toast.info(`${name} is already installed.`);
+        setInstalled(true);
+        return;
+      }
+      const updated = [...installedApps, product];
+      localStorage.setItem('installedProducts', JSON.stringify(updated));
+      window.dispatchEvent(new Event('installedProductsUpdated'));
+      setInstalled(true);
+      toast.success(`${name} has been installed successfully!`, { position: "top-right", autoClose: 3000 });
+    } catch (err) {
+      console.error('Install failed:', err);
+      toast.error('Failed to install app.');
+    }
   };
+
+  // Prepare chart data
+  const chartData = ratingsBreakdown
+    ? Object.entries(ratingsBreakdown)
+        .map(([star, value]) => ({ star: `${star}⭐`, count: value }))
+        .sort((a, b) => a.star.localeCompare(b.star)) // ensure 1⭐ to 5⭐
+    : [];
 
   return (
     <div className="max-w-6xl mx-auto bg-white p-6 sm:p-10 my-10 rounded-xl shadow-md border border-gray-200">
@@ -45,12 +61,11 @@ const ProductDetails = () => {
             <span>{size} MB</span>
           </div>
 
-          {/* Install Button */}
           <button
             onClick={handleInstallClick}
             disabled={installed}
             className={`mt-4 px-4 py-2 rounded ${
-              installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white'
+              installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-green-600 hover:bg-green-500 text-white'
             }`}
           >
             {installed ? 'Installed' : 'Install Now'}
@@ -58,24 +73,25 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Ratings chart */}
-      {ratingsBreakdown && (
+      {/* Ratings Chart */}
+      {chartData.length > 0 && (
         <div className="mb-6">
           <h2 className="font-semibold mb-2">Ratings</h2>
-          <div className="space-y-1">
-            {Object.entries(ratingsBreakdown).map(([star, value]) => (
-              <div key={star} className="flex items-center gap-2">
-                <span className="w-12 text-sm">{star}⭐</span>
-                <div className="flex-1 h-2 bg-gray-200 rounded">
-                  <div
-                    className="h-2 bg-amber-500 rounded"
-                    style={{ width: `${value}%` }}
-                  ></div>
-                </div>
-                <span className="w-12 text-sm text-gray-500">{value}%</span>
-              </div>
-            ))}
-          </div>
+          <ResponsiveContainer width="100%" height={200}>
+            <BarChart
+              layout="vertical"
+              data={chartData}
+              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" label={{ value: "Percentage", position: "insideBottomRight", offset: 0 }} />
+              <YAxis dataKey="star" type="category" width={60} />
+              <Tooltip />
+              <Bar dataKey="count" fill="#f59e0b" >
+                <LabelList dataKey="count" position="right" />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       )}
 
@@ -85,7 +101,6 @@ const ProductDetails = () => {
         <p className="text-gray-700 whitespace-pre-line">{description}</p>
       </div>
 
-      {/* Toast Container */}
       <ToastContainer />
     </div>
   );

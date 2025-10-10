@@ -43,9 +43,7 @@ const Apps = () => {
                          <ProductCard key={product.id}product={product}/>
                          )}
                      </div>
-                     <div className="card-actions justify-end">
-           <button className="btn btn-primary mx-auto my-8">Show All</button>
-         </div>
+                     
                  </div>
                  
              </div>
